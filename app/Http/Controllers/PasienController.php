@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class PasienController extends Controller
 {
-    //
+    //eeeeee
     public function masuk(){
         return view('/login');
     }
