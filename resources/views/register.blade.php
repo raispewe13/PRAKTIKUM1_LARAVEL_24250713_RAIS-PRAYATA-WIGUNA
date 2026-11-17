@@ -135,7 +135,6 @@
             type="text"
             class="form-control"
             placeholder="Contoh: Rina Safitri"
-            required
           />
         </div>
 
@@ -146,7 +145,6 @@
             type="email"
             class="form-control"
             placeholder="nama@email.com"
-            required
           />
         </div>
 
@@ -157,7 +155,6 @@
             type="tel"
             class="form-control"
             placeholder="081234567890"
-            required
           />
         </div>
 
@@ -168,7 +165,6 @@
             class="form-control"
             rows="2"
             placeholder="Alamat lengkap tempat tinggal"
-            required
           ></textarea>
         </div>
 
@@ -180,7 +176,6 @@
               type="password"
               class="form-control"
               placeholder="Minimal 6 karakter"
-              required
             />
           </div>
           <div class="form-group">
@@ -190,7 +185,6 @@
               type="password"
               class="form-control"
               placeholder="Ketik ulang sandi"
-              required
             />
           </div>
         </div>

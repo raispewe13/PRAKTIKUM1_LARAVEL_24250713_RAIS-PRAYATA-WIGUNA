@@ -10,3 +10,4 @@ Route::get('/', function () {
 route::get('/login',[PasienController::class,'masuk']);
 route::post('/login',[PasienController::class,'proses']);
 route::get('/register',[PasienController::class,'regis']);
+route::post('/register',[PasienController::class,'buat']);

@@ -17,7 +17,7 @@ class PasienController extends Controller
     public function proses(Request $request){
         $request->validate([
             'Email'=>'required',
-            'Katasandi'=>'required'
+            'password'=>'required'
         ]);
 
         $ambildata=$request->only('Email','password');
@@ -28,5 +28,17 @@ class PasienController extends Controller
         else{
             return back()->with('pesan','email atau password salah');
         }
+    }
+    public function buat(Request $request){
+        $request->validate([
+            'NamaPasien'=>'required',
+            'Email'=>'required|unique:email|email',
+            'Notelfon'=>'required|string',
+            'Alamat'=>'required|string',
+            'password'=>'required|min:6',
+            'Ulangi'=>'required|same:Katasandi'
+
+        ]);
+        return back()->with('pesan','akun dibuat');       
     }
 }
