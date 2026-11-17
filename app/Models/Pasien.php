@@ -10,4 +10,14 @@ use Illuminate\Notifications\Notifiable;
 class Pasien extends Authenticatable
 {
     //
+    protected $fillable = [
+        'id_pasien',
+        'nama_lengkap',
+        'email',
+        'no_telepon',
+        'alamat',
+        'password',
+        'status_pasien',
+        'created_at',
+    ];
 }
