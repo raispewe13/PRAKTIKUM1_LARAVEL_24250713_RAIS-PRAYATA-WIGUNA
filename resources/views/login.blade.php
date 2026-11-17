@@ -120,9 +120,11 @@
       </div>
 
       <form action="" method="POST">
+        @csrf
         <div class="form-group">
           <label>Alamat Email Pasien</label>
           <input
+            name="Email"
             type="email"
             class="form-control"
             placeholder="nama@email.com"
@@ -133,6 +135,7 @@
         <div class="form-group">
           <label>Kata Sandi</label>
           <input
+            name="Katasandi"
             type="password"
             class="form-control"
             placeholder="Masukkan kata sandi akun"
@@ -140,7 +143,7 @@
           />
         </div>
 
-        <button type="submit" class="btn-submit">Masuk ke Portal Apotek</button>
+        <button name="btnmasuk" type="submit" class="btn-submit">Masuk ke Portal Apotek</button>
       </form>
 
       <div class="auth-footer">
